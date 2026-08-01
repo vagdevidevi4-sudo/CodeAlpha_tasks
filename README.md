@@ -148,6 +148,4 @@ These projects were completed as part of the **CodeAlpha Python Programming Inte
 
 **Internship:** CodeAlpha Python Programming Internship
 
----
 
-⭐ If you found this repository helpful, feel free to star it!
