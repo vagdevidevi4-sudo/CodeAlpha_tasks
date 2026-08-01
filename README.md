@@ -147,5 +147,3 @@ These projects were completed as part of the **CodeAlpha Python Programming Inte
 **Vagdevi**
 
 **Internship:** CodeAlpha Python Programming Internship
-
-
