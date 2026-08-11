@@ -10,7 +10,6 @@ stock_prices = {
 
 
 def get_portfolio():
-    """Take stock names and quantities from the user."""
     portfolio = {}
 
     print("=== Stock Portfolio Tracker ===")
@@ -39,7 +38,6 @@ def get_portfolio():
             print(" Please enter a valid number.\n")
             continue
 
-        # If the stock is entered again, add to existing quantity
         portfolio[stock_name] = portfolio.get(stock_name, 0) + quantity
         print(f" Added {quantity} share(s) of {stock_name}.\n")
 
@@ -47,7 +45,6 @@ def get_portfolio():
 
 
 def calculate_investment(portfolio):
-    """Calculate total value per stock and overall investment."""
     investment_details = []
     total_investment = 0
 
@@ -61,7 +58,6 @@ def calculate_investment(portfolio):
 
 
 def display_summary(investment_details, total_investment):
-    """Print a formatted summary of the portfolio."""
     print("\n" + "=" * 45)
     print("PORTFOLIO SUMMARY")
     print("=" * 45)
@@ -77,7 +73,6 @@ def display_summary(investment_details, total_investment):
 
 
 def save_to_file(investment_details, total_investment):
-    """Optionally save the results to a .txt or .csv file."""
     choice = input("\nDo you want to save the result? (yes/no): ").strip().lower()
 
     if choice not in ("yes", "y"):
