@@ -1,23 +1,15 @@
 import random
-
-# Small predefined word list (as per task scope)
 WORDS = ["python", "hangman", "developer", "internship", "keyboard"]
 
 MAX_ATTEMPTS = 6
-
-
 def choose_word():
-    """Pick a random word from the list."""
     return random.choice(WORDS)
 
 
 def display_progress(word, guessed_letters):
-    """Show the word with guessed letters filled in, others as underscores."""
     return " ".join(letter if letter in guessed_letters else "_" for letter in word)
 
-
 def get_player_name():
-    """Ask for and validate the player's name."""
     name = ""
     while not name:
         name = input("Enter your name: ").strip()
