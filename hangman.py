@@ -1,6 +1,5 @@
 import random
 WORDS = ["python", "hangman", "developer", "internship", "keyboard"]
-
 MAX_ATTEMPTS = 6
 def choose_word():
     return random.choice(WORDS)
